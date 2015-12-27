@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.samworks.quickconf.InviteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Closed Group"
+            android:checked="true"
+            android:id="@+id/chkClsgrp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInvitees"
+            android:text="Invitees"
+            android:layout_margin="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/chkClsgrp"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/add"
+            android:layout_margin="5dp"
+            android:id="@+id/btnAddInvtee"
+            android:padding="5dp"
+            android:layout_below="@+id/chkClsgrp"
+            android:layout_alignParentRight="true"
+            android:foregroundGravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+
+            android:textSize="15dp"
+            android:layout_below="@+id/btnAddInvtee"
+            android:id="@+id/lstInvitees"
+            android:lines="5"
+            android:isScrollContainer="true"
+            android:background="#bdc3c7"
+            android:text=""
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+
+        android:textSize="20dp"
+        android:layout_below="@+id/lstInvitees"
+        android:id="@+id/callin"
+        android:background="#bdc3c7"
+        android:text="@string/callintext"
+    />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/callin"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageButton
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/imessage"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/hangouts"
+            android:layout_margin="5dp"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/google"
+            android:layout_margin="5dp"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/whatsapp"
+            android:id="@+id/btnwhatsapp"
+            android:layout_margin="5dp"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/skype"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
+
