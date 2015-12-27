@@ -6,6 +6,8 @@ The user can restrict the people who can join the conference. The Quick Conferen
 
 Users will be automatically directed to the conference, based on the number they are calling from. If the calling number is not configured in the system they will be rejected and the call will hung-up.
 
+Users will be identified and addressed with Name when they dial in.
+
 Conference details can be shared of messaging platforms like WhatsApp.
 
 #How does it work?
